@@ -1,0 +1,172 @@
+/* Navbar */
+.navbar{
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 70px;
+    border-bottom: 2px #fff solid;
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar a{
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover{
+    border-bottom: 2px #fff solid;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+/* Head index */
+.head{
+    height: 300px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+
+.head h1{
+    font-size: 40px;
+}
+
+.head .grid{
+    grid-template-columns: 65% 35%;
+    gap: 30px;
+}
+
+.head-text{
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.head-logo{
+    justify-self: flex-end;
+    animation: slideInFromRight 1s ease-in;
+}
+
+/* Head others */
+.others{
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 170px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.tools{
+    height: 140px;
+}
+
+.others h2{
+    font-size: 30px;
+}
+
+.others p{
+    max-width: 800px;
+    margin: auto;
+}
+
+.others .others-text{
+    animation: slideInFromTop 1s ease-in;
+}
+
+/* Main index */
+.main{
+    padding-top: 40px;
+    animation: slideInFromBottom 1s ease-in;
+}
+
+.main-heading{
+    max-width: 700px;
+    margin: auto;
+}
+
+.main .flex .card{
+    margin: 30px 10px;
+    width: 300px;
+}
+
+/* Main others */
+.others-main .card{
+    background-color: white;
+    color: black;
+    margin: 30px 10px;
+}
+
+.others-main .card:hover{
+    transform: none;
+}
+
+.others-main .card a{
+    color: black;
+}
+
+.others-main .summary{
+    position: sticky;
+    top: 80px;
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.others-main .content{
+    animation: slideInFromRight 1s ease-in;
+}
+
+.others-main .grid{
+    grid-template-columns: 1fr 3fr;
+    align-items: flex-start;
+}
+
+.tools-main .grid{
+    grid-template-columns: 1fr 2.9fr;
+}
+
+.books-main .grid{
+    grid-template-columns: 1fr 2.1fr;
+}
+
+.others-main h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.others-main h3:nth-child(n + 2){
+    margin-top: 50px;
+}
+
+.others-main nav li{
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px #ccc solid;
+}
+
+.others-main img{
+    width: 40%;
+    display: block;
+    margin: 20px auto 40px;
+}
+
+.books img{
+    width: 20%;
+}
+
+/* Footer */
+.footer{
+    height: 170px;
+}
+
+.footer .social{
+    text-align: end;
+}
+
+.footer .social a{
+    margin: 0 10px;
+}

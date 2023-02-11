@@ -1,0 +1,221 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300;400;500;700&display=swap');
+
+:root{
+    --primary-color: #B22222;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+h1, h2{
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+img{
+    width: 100%;
+}
+
+/* Utilities */
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card{
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.card:hover{
+    transform: scale(0.98);
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+}
+  
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+}
+  
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+}
+  
+@keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+}
+
+/* Tablets and under */
+@media(max-width: 768px){
+    /* Head */
+    .head .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .head{
+        height: auto;
+    }
+
+    .head-text{
+        text-align: center;
+        margin-top: 20px;
+        animation: slideInFromTop 1s ease-in;
+    }
+
+    .head-logo{
+        margin: auto;
+        animation: slideInFromBottom 1s ease-in;
+    }
+
+    .others{
+        height: 200px;
+    }
+
+    /* Main */
+    .others-main .container{
+        padding: 0px;
+    }
+
+    .others-main .grid{
+        grid-template-columns: 1fr 2.5fr;
+    }
+
+    /* Footer */
+    .footer .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .footer .footer-text, .footer .social{
+        justify-self: center;
+        text-align: center;
+    }
+
+    .footer h1{
+        margin-top: 20px;
+    }
+
+    .footer .social{
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile */
+@media(max-width: 600px){
+    /* Navbar */
+    .navbar{
+        height: 110px;
+    }
+
+    .navbar .flex{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    /* Head */
+    .others{
+        height: 230px;
+    }
+
+    .tools{
+        height: 210px;
+    }
+
+    /* Main */
+    .others-main .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .others-main .summary{
+        position: static;
+        animation: slideInFromBottom 1s ease-in;
+    }
+
+    .others-main .card{
+        margin: 10px;
+    }
+}
