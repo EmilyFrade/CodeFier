@@ -196,15 +196,28 @@ img{
     }
 
     /* Head */
-    .others{
-        height: 230px;
-    }
-
-    .tools{
-        height: 210px;
+    .others, .tools{
+        height: auto;
+        padding-bottom: 20px;
     }
 
     /* Main */
+    .main .flex{
+        flex-wrap: wrap;
+    }
+
+    .main .flex .card{
+        margin: 10px 0;
+    }
+
+    .main .flex .card:first-child{
+        margin-top: 30px;
+    }
+
+    .main .flex .card:last-child{
+        margin-bottom: 30px;
+    }
+
     .others-main .grid{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
