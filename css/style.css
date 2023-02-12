@@ -109,6 +109,10 @@
     color: black;
 }
 
+.others-main .card a:hover{
+    color: var(--primary-color);
+}
+
 .others-main .summary{
     position: sticky;
     top: 80px;
