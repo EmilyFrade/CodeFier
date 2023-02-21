@@ -31,6 +31,6 @@
   
 ## Features
 - [x] Site resposivo;
-- [x] Utilização de CSS grid, CSS flexbox e jQuery;
+- [x] Utilização de CSS grid, CSS flexbox e Media Query;
 - [x] Conteúdos com link de acesso;
 - [x] Sumário lateral (exceto em mobile);
